@@ -1,5 +1,13 @@
 #ifndef DHT_H_INCLUDED
 #define DHT_H_INCLUDED
+
+#ifndef F_CPU
+#define F_CPU 16000000UL
+#endif
+#ifndef __AVR_ATmega328P__
+#define __AVR_ATmega328P__
+#endif
+
 /*
 ||
 ||  Filename:	 		DHT.h
@@ -22,11 +30,11 @@
 //----------------------//
 
 //----- Auxiliary data -------------------//
-#define DHT11						 1
-#define DHT22						 2
-#define DHT_ReadInterval			1500
+#define DHT11 1
+#define DHT22 2
+#define DHT_ReadInterval 1500
 
-#define __DHT_Delay_Setup			2000
+#define __DHT_Delay_Setup 2000
 
 enum DHT_Status_t
 {

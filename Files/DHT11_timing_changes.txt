@@ -5,3 +5,7 @@
 120: 70 -> 65
 141: 100 -> 75
 
+git subtree add --prefix   master --squash
+git submodule add git@github.com:efthymios-ks/AVR-DHT.git ./alarm_clock/src/AVR-DHT
+git submodule add git@github.com:xythobuz/avrSerial.git ./alarm_clock/src/avrSerial
+git submodule set-url ./alarm_clock/src/AVR-DHT git@github.com:simonqq21/AVR-DHT.git
